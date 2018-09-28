@@ -5,10 +5,10 @@ ENV PYTHONUNBUFFERED 1
 COPY . /app
 
 RUN pip install -r /app/requirements.txt \
-    && chmod +x start.sh
+    && chmod +x /app/start.sh
 
 WORKDIR /app
 
 EXPOSE 8000
 
-CMD ["start.sh"]
+CMD ["/app/start.sh"]
