@@ -9,6 +9,6 @@ RUN pip install -r /app/requirements.txt \
 
 WORKDIR /app
 
-EXPOSE 8000
+EXPOSE 80
 
 CMD ["/app/start.sh"]
